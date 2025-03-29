@@ -36,9 +36,8 @@ const Navbar = () => {
       <div className="container py-3 sm:py-0">
         <div className="flex justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-3xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="" className="w-10" />
-              Books
+            <a href="#" className="font-bold text-3xl sm:text-3xl flex gap-2 ">
+              <img src={Logo} alt="" className="w-16 h-16 " />
             </a>
           </div>
           <div>
@@ -54,22 +53,23 @@ const Navbar = () => {
                 </li>
               ))}
               <li className="group relative cursor-pointer">
-                <a href="/#" className="flex h-[72px] items-center gap[2px]">
+                <a href="/#" className="flex h-[72px] items-center gap-[2px]">
                   Quick Links
                   <span>
                     <FaCaretDown className="transition duration-300 group-hover:rotate-180" />
                   </span>
                 </a>
+
+                <div className="absolute -left-9 z-[10] hidden group-hover:block">
+                  <ul>
+                    {DropdownLinks.map((data) => (
+                      <li key={data.id}>
+                        <a href={data.link}>{data.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
-              <div>
-                <ul>
-                  {DropdownLinks.map((data) => (
-                    <li>
-                      <a href={data.link}>{data.name}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </ul>
           </div>
         </div>
