@@ -36,8 +36,12 @@ const Navbar = () => {
       <div className="container py-3 sm:py-0">
         <div className="flex justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-3xl sm:text-3xl flex gap-2 ">
+            <a
+              href="#"
+              className="font-bold text-3xl sm:text-3xl flex gap-2 items-center justify-center"
+            >
               <img src={Logo} alt="" className="w-16 h-16 " />
+              Books
             </a>
           </div>
           <div>
