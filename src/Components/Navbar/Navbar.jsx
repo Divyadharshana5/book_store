@@ -44,7 +44,7 @@ const Navbar = () => {
               Books
             </a>
           </div>
-          <div>
+          <div className="flex items-center justify-between gap-4">
             <ul className="items-center gap-4 hidden sm:flex">
               {Menu.map((menu) => (
                 <li>
@@ -64,17 +64,23 @@ const Navbar = () => {
                   </span>
                 </a>
 
-                <div className="absolute -left-9 z-[10] hidden group-hover:block">
+                <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md">
                   <ul>
                     {DropdownLinks.map((data) => (
                       <li key={data.id}>
-                        <a href={data.link}>{data.name}</a>
+                        <a
+                          href={data.link}
+                          className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                        >
+                          {data.name}
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </div>
               </li>
             </ul>
+            <button>Order</button>
           </div>
         </div>
       </div>
