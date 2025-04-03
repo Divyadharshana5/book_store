@@ -1,6 +1,8 @@
-import React from "react";
-import Logo from "../../assets/website/logo.png";
+import { useState, useEffect } from "react"; // Import useEffect
+import Logo from "../../../assets/website/logo.png";
 import { FaCaretDown } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 const Menu = [
   {
@@ -31,8 +33,22 @@ const DropdownLinks = [
 ];
 
 const Navbar = () => {
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
+
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container py-3 sm:py-0">
         <div className="flex justify-between items-center">
           <div>
@@ -64,7 +80,7 @@ const Navbar = () => {
                   </span>
                 </a>
 
-                <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md">
+                <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md w-[150px]">
                   <ul>
                     {DropdownLinks.map((data) => (
                       <li key={data.id}>
@@ -79,8 +95,21 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
+              <li>
+                <DarkModeSwitch
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                  size={25}
+                />
+              </li>
             </ul>
-            <button>Order</button>
+            <button
+              className="bg-gradient-to-r from-primary to-secondary text-black dark:text-white px-4 py-1 rounded-full flex items-center gap-3
+            hover:scale-105 duration-300"
+            >
+              Order
+              <FaCartShopping className="text-xl  drop-shadow-sm cursor-pointer" />
+            </button>
           </div>
         </div>
       </div>
