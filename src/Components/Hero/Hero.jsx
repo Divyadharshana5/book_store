@@ -62,7 +62,7 @@ const Hero = () => {
               </h1>
               <p className="text-sm">{selectedBook.description}</p>
               <div>
-                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 shadow-md">
+                <button className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 shadow-md">
                   Order Now
                 </button>
               </div>
