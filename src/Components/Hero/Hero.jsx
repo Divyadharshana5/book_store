@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Book1 from "../../../assets/books/Book1.jpg";
 import Book2 from "../../../assets/books/Book2.jpg";
 import Book3 from "../../../assets/books/Book3.jpg";
-import Vector from "../../../assets/website/blue-pattern.png";
+import Vector from "../../../assets/website/blue_pattern.png.jpg";
 
 const ImageList = [
   {
@@ -62,7 +62,7 @@ const Hero = () => {
               </h1>
               <p className="text-sm">{selectedBook.description}</p>
               <div>
-                <button className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 shadow-md">
+                <button className="bg-gradient-to-r from-blue-400 to-blue-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 shadow-md">
                   Order Now
                 </button>
               </div>
