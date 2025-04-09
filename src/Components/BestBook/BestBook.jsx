@@ -49,17 +49,23 @@ const BestBook = () => {
             {BooksData.map((book) => (
               <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
                 <div className="h-[100px]">
-                  <img src={book.img} alt="" />
+                  <img
+                    src={book.img}
+                    alt=""
+                    className="max-w-[100px] block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 shadow-md"
+                  />
                 </div>
-                <div>
+                <div className="">
                   <div className="w-full flex items-center justify-center">
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
                   </div>
-                  <h1>{book.title}</h1>
-                  <p>{book.description}</p>
+                  <h1 className="text-xl font-bold">{book.title}</h1>
+                  <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                    {book.description}
+                  </p>
                   <button>Order Now</button>
                 </div>
               </div>
