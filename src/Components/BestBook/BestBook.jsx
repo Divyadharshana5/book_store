@@ -1,7 +1,7 @@
 import React from "react";
-import Img1 from "../../assets/books/Book1.jpg";
-import Img2 from "../../assets/books/Book2.jpg";
-import Img3 from "../../assets/books/Book3.jpg";
+import Img1 from "../../../assets/books/Book1.jpg";
+import Img2 from "../../../assets/books/Book2.jpg";
+import Img3 from "../../../assets/books/Book3.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
@@ -36,25 +36,26 @@ const BestBook = () => {
       <div className="py-10">
         <div className="container">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+            <p className="text-sm font-bold bg-clip-text bg-gradient-to-r text-blue-400">
               Trending Books
             </p>
             <h1 className="text-3xl font-bold">Best Books</h1>
             <p className="text-xs text-gray-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              eligendi ad fugiat aut saepe labore, libero modi fuga alias
-              obcaecati
+              There is a wisdom that is woe; but there is a woe that is
+              madness...
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
-            {BooksData.map((book) => {
-              <div>
+            {BooksData.map((book) => (
+              <div className="">
                 <div className="h-[100px]">
                   <img src={book.img} alt="" />
                 </div>
-                <div></div>
-              </div>;
-            })}
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
