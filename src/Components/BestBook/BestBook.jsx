@@ -52,7 +52,7 @@ const BestBook = () => {
                   <img
                     src={book.img}
                     alt=""
-                    className="max-w-[100px] block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 shadow-md"
+                    className=" max-w-[100px] block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 shadow-md "
                   />
                 </div>
                 <div className="">
