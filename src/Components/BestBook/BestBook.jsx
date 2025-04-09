@@ -47,12 +47,20 @@ const BestBook = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
             {BooksData.map((book) => (
-              <div className="">
+              <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
                 <div className="h-[100px]">
                   <img src={book.img} alt="" />
                 </div>
                 <div>
-                  <div></div>
+                  <div className="w-full flex items-center justify-center">
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                  </div>
+                  <h1>{book.title}</h1>
+                  <p>{book.description}</p>
+                  <button>Order Now</button>
                 </div>
               </div>
             ))}
