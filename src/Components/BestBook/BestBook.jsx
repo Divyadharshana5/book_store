@@ -55,7 +55,7 @@ const BestBook = () => {
                     className=" max-w-[100px] block mx-auto transform -translate-y-14 group-hover:scale-105 duration-300 shadow-md "
                   />
                 </div>
-                <div className="">
+                <div className="p-4 text-center">
                   <div className="w-full flex items-center justify-center">
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
