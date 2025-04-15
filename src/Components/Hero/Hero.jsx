@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Book1 from "../../../assets/books/Book1.jpg";
 import Book2 from "../../../assets/books/Book2.jpg";
 import Book3 from "../../../assets/books/Book3.jpg";
-import Vector from "../../../assets/website/blue_pattern.png.jpg";
+import Vector from "../../../assets/website/blue-pattern.png";
 
 const ImageList = [
   {
