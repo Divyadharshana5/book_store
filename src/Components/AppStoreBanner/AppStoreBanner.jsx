@@ -19,7 +19,7 @@ const AppStoreBanner = () => {
       style={bannerImg}
     >
       <div className="container">
-        <div>
+        <div className="space-y-6 max-w-xl max-auto">
           <h1 className="text-2xl text-center sm:text-4xl font-semibold ">
             Read Books at Your fingertips!
           </h1>
