@@ -15,6 +15,7 @@ const App = () => {
         <Banner />
         <AppStoreBanner />
         <AllBooks />
+        <TestMonial />
       </div>
     </>
   );
