@@ -1,3 +1,4 @@
+import AllBooks from "./Components/AllBooks/AllBooks";
 import AppStoreBanner from "./Components/AppStoreBanner/AppStoreBanner";
 import Banner from "./Components/Banner/Banner";
 import BestBook from "./Components/BestBook/BestBook";
@@ -13,6 +14,7 @@ const App = () => {
         <BestBook />
         <Banner />
         <AppStoreBanner />
+        <AllBooks />
       </div>
     </>
   );
