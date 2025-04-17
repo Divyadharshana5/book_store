@@ -78,7 +78,7 @@ const BooksData = [
 const AllBooks = () => {
   return (
     <>
-      <div>
+      <div className="py-10">
         <div className="container placeholder-gray-100">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm font-bold bg-clip-text bg-gradient-to-r text-blue-400">
@@ -93,7 +93,7 @@ const AllBooks = () => {
           <div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 place-items-center gap-5">
               {BooksData.map((data) => (
-                <div>
+                <div className="space-y-3">
                   <img
                     src={data.img}
                     alt=""
@@ -102,7 +102,9 @@ const AllBooks = () => {
                   <div>
                     <h2 className="font-semibold">{data.title}</h2>
 
-                    <p className="text-sm text-gray-700">{data.author}</p>
+                    <p className="text-sm text-gray-700 dark:text-gray-400">
+                      {data.author}
+                    </p>
                     <div className="flex items-center gap-1">
                       <FaStar className="text-yellow-500" />
                       <span>{data.rating}</span>
@@ -110,6 +112,11 @@ const AllBooks = () => {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="flex justify-center">
+              <button className="text-center mt-10 cursor-pointer bg-primary text-white py-2 px-5 rounded-full">
+                View all books
+              </button>
             </div>
           </div>
         </div>
