@@ -52,17 +52,33 @@ const Hero = () => {
         style={bgImage}
       >
         <div className="container pb-8 sm:pb-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
             <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+              <h1
+                data-aos="zoom-out"
+                data-aos-duration="500"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+              >
                 {selectedBook.title}
-                <p className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary text-right text-sm">
+                <p
+                  data-aos="slide-up"
+                  data-aos-duration="500"
+                  data-aos-delay="100"
+                  className="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary"
+                >
                   by Anonymous
                 </p>
               </h1>
-              <p className="text-sm">{selectedBook.description}</p>
+              <p
+                data-aos="slide-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                className="text-sm"
+              >
+                {selectedBook.description}
+              </p>
               <div>
-                <button className="bg-gradient-to-r from-blue-400 to-blue-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200 shadow-md">
+                <button className="bg-gradient-to-r from-blue-400 to-blue-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200">
                   Order Now
                 </button>
               </div>
