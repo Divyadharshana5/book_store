@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-const TestimonialData = [
+const testimonialData = [
   {
     id: 1,
     name: "Victor",
@@ -20,7 +20,7 @@ const TestimonialData = [
     id: 3,
     name: "Sachin Tendulkar",
     text: "Sachin Ramesh Tendulkar is an Indian former international cricketer who captained the Indian national team. He is widely regarded as one of the greatest cricketers of all time",
-    img: "https://techstory.in/wp-content/uploads/2015/05/sachin-tendulkar.jpg",
+    img: "https://c.ndtvimg.com/2023-05/b45ah6t8_sachin-tendulkar-bcci_625x300_04_May_23.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605",
   },
 ];
 
@@ -80,9 +80,18 @@ const TestiMonial = () => {
 
         <div>
           <Slider {...settings}>
-            {TestimonialData.map((data) => (
+            {testimonialData.map((data) => (
               <div>
-                <div></div>
+                <div>
+                  <div>
+                    <img src={data.img} alt="" />
+                  </div>
+                  <div>
+                    <div>
+                      <p>{data.text}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </Slider>
