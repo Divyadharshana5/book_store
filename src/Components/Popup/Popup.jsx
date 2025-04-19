@@ -23,6 +23,19 @@ const Popup = ({ orderPopup, handleOrderPopup }) => {
                 placeholder="Name"
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
+              />
+              <input
+                type="text"
+                placeholder="Address"
+                className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
+              />
+              <div>
+                <button></button>
+              </div>
             </div>
           </div>
         </div>
