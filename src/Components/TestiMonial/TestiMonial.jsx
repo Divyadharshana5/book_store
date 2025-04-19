@@ -66,7 +66,7 @@ const TestiMonial = () => {
     ],
   };
   return (
-    <div>
+    <div className="pb-10">
       <div className="container">
         <div className="text-center mb-20 max-w-[400px] mx-auto">
           <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
@@ -81,7 +81,7 @@ const TestiMonial = () => {
         <div>
           <Slider {...settings}>
             {testimonialData.map((data) => (
-              <div>
+              <div className="my-6">
                 <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                   <div>
                     <img
@@ -98,8 +98,10 @@ const TestiMonial = () => {
                       </h1>
                     </div>
                   </div>
+                  <p className="absolute text-black/20 z-10 top-0 right-0 font-serif text-9xl">
+                    ,,
+                  </p>
                 </div>
-                <p className="">,,</p>
               </div>
             ))}
           </Slider>
