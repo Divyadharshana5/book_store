@@ -7,6 +7,28 @@ import {
   FaMobileAlt,
 } from "react-icons/fa";
 
+const FooterLinks = [
+  {
+    title: "Home",
+    link: "/#",
+  },
+
+  {
+    title: "About",
+    link: "/about",
+  },
+
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+
+  {
+    title: "Blog",
+    link: "/blog",
+  },
+];
+
 const Footer = () => {
   return (
     <div>
@@ -43,6 +65,26 @@ const Footer = () => {
               <a href="#">
                 <FaLinkedin className="text-3xl" />
               </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pt-10">
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul>
+                  {FooterLinks.map((data) => (
+                    <li
+                      className="cursor-pointer hover:translate-x-1 duration-
+                    hover:text-primary space-x-1 text-gray-500"
+                    >
+                      <span>&#11162;</span>
+                      <span>{data.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
