@@ -2,6 +2,7 @@ import AllBooks from "./Components/AllBooks/AllBooks";
 import AppStoreBanner from "./Components/AppStoreBanner/AppStoreBanner";
 import Banner from "./Components/Banner/Banner";
 import BestBook from "./Components/BestBook/BestBook";
+import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import TestiMonial from "./Components/TestiMonial/TestiMonial";
@@ -17,6 +18,7 @@ const App = () => {
         <AppStoreBanner />
         <AllBooks />
         <TestiMonial />
+        <Footer />
       </div>
     </>
   );
