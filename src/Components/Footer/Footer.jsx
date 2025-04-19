@@ -31,7 +31,7 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-gray-100 dark:bg-gray-950">
       <div className="container">
         <div className="grid md:grid-cols-3 py-5">
           <div className="py-8 px-4">
@@ -124,6 +124,14 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="border-t-2 border-gray-300/50">
+            <p className="text-center py-10">
+              Copyright &copy; 2025, All rights reserved || Made by Dharsha!
+            </p>
           </div>
         </div>
       </div>
