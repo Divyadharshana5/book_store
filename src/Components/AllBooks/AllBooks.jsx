@@ -80,7 +80,10 @@ const AllBooks = () => {
     <>
       <div className="py-10">
         <div className="container placeholder-gray-100">
-          <div className="text-center mb-20 max-w-[400px] mx-auto">
+          <div
+            data-aos="slide-up"
+            className="text-center mb-20 max-w-[400px] mx-auto"
+          >
             <p className="text-sm font-bold bg-clip-text bg-gradient-to-r text-blue-400">
               Top Books for You!!
             </p>
@@ -90,7 +93,7 @@ const AllBooks = () => {
               madness...
             </p>
           </div>
-          <div>
+          <div data-aos="slide-up">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 place-items-center gap-5">
               {BooksData.map((data) => (
                 <div className="space-y-3">
