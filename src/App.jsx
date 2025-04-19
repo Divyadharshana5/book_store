@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 import Popup from "./Components/Popup/Popup";
 
 const App = () => {
-  const [orderPopup, setOrderPopup] = useState(true);
+  const [orderPopup, setOrderPopup] = useState(false);
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
