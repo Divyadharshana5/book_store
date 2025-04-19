@@ -82,16 +82,24 @@ const TestiMonial = () => {
           <Slider {...settings}>
             {testimonialData.map((data) => (
               <div>
-                <div>
+                <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                   <div>
-                    <img src={data.img} alt="" />
+                    <img
+                      src={data.img}
+                      alt=""
+                      className="rounded-full w-20 h-20 object-cover"
+                    />
                   </div>
                   <div>
                     <div>
-                      <p>{data.text}</p>
+                      <p className="text-gray-500 text-sm">{data.text}</p>
+                      <h1 className="text-xl font-bold text-black/80 dark:text-white">
+                        {data.name}
+                      </h1>
                     </div>
                   </div>
                 </div>
+                <p className="">,,</p>
               </div>
             ))}
           </Slider>
