@@ -73,7 +73,45 @@ const Footer = () => {
                 <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
                   Important Links
                 </h1>
-                <ul>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((data) => (
+                    <li
+                      className="cursor-pointer hover:translate-x-1 duration-
+                    hover:text-primary space-x-1 text-gray-500"
+                    >
+                      <span>&#11162;</span>
+                      <span>{data.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((data) => (
+                    <li
+                      className="cursor-pointer hover:translate-x-1 duration-
+                    hover:text-primary space-x-1 text-gray-500"
+                    >
+                      <span>&#11162;</span>
+                      <span>{data.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul className="flex flex-col gap-3">
                   {FooterLinks.map((data) => (
                     <li
                       className="cursor-pointer hover:translate-x-1 duration-
