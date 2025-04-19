@@ -30,7 +30,7 @@ const ImageList = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
   const [selectedBook, setSelectedBook] = useState(ImageList[0]); // Initialize with the first book
 
   const bgImage = {
@@ -79,6 +79,7 @@ const Hero = () => {
               </p>
               <div>
                 <button
+                  onClick={handleOrderPopup}
                   data-aos="zoom-in"
                   className="bg-gradient-to-r from-blue-400 to-blue-800 text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200"
                 >
